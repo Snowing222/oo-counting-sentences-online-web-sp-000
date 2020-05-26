@@ -18,7 +18,7 @@ class String
   end
 
   def count_sentences
-    self.scan(/[!?\.]\s/)
+    self.scan(/[!?\.]\s/).length==0? 0: self.scan(/[!?\.]\s/).length+1
 
 
   end
